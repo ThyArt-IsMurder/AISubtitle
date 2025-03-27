@@ -29,7 +29,11 @@ def extract_audio_from_video(video_path: str):
     sample_rate = audio_stream.rate if hasattr(audio_stream, "rate") else 48000
     try:
         for frame in container.decode(audio_stream):
-            pcm = frame.to_ndarray(format='flt')
+            try:
+                pcm = frame.to_ndarray()
+            except TypeError:
+                pcm = frame.to_ndarray(format='flt')
+                
             if pcm.ndim > 1:
                 pcm = np.mean(pcm, axis=0)
             audio_frames.append(pcm)
