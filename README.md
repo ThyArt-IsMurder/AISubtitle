@@ -97,3 +97,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - [OpenAI](https://openai.com/) for providing the API for text correction.
 - [Hugging Face](https://huggingface.co/) for the speech recognition models.
 - [Deep Translator](https://pypi.org/project/deep-translator/) for translation capabilities.
+
+
+
+
+https://github.com/user-attachments/assets/a8bd37d0-7c1f-4df3-876e-2319bcb995d8
+
